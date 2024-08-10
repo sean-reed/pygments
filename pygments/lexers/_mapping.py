@@ -467,6 +467,7 @@ LEXERS = {
     'ShenLexer': ('pygments.lexers.lisp', 'Shen', ('shen',), ('*.shen',), ('text/x-shen', 'application/x-shen')),
     'SieveLexer': ('pygments.lexers.sieve', 'Sieve', ('sieve',), ('*.siv', '*.sieve'), ()),
     'SilverLexer': ('pygments.lexers.verification', 'Silver', ('silver',), ('*.sil', '*.vpr'), ()),
+    'SimTalkLexer': ('pygments.lexers.simtalk', 'SimTalk', ('simtalk',), (), ()),
     'SingularityLexer': ('pygments.lexers.configs', 'Singularity', ('singularity',), ('*.def', 'Singularity'), ()),
     'SlashLexer': ('pygments.lexers.slash', 'Slash', ('slash',), ('*.sla',), ()),
     'SlimLexer': ('pygments.lexers.webmisc', 'Slim', ('slim',), ('*.slim',), ('text/x-slim',)),

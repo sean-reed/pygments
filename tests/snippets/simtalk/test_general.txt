@@ -1,0 +1,109 @@
+---input---
+/* Release the circuit board from the source only
+once the buffer has less than 3 items */
+waituntil Buffer.NumMU < 3
+-- Enter the circuit board into the table.
+var row: integer
+row := CircuitBoards.getColumnYDim(1) + 1
+CircuitBoards["circuitBoard", row] := @
+CircuitBoards["location", row] := ?
+CircuitBoards["entered", row] := EventController.SimTime
+@.move -- Move the board onto successor.
+
+---tokens---
+'/* Release the circuit board from the source only\nonce the buffer has less than 3 items */' Comment.Multiline
+'\n'          Text.Whitespace
+
+'waituntil'   Keyword
+' '           Text.Whitespace
+'Bu'          Name
+'ffer'        Name
+'.'           Punctuation
+'Nu'          Name
+'mMU'         Name
+' '           Text.Whitespace
+'<'           Operator
+' '           Text.Whitespace
+'3'           Literal.Number.Integer
+'\n'          Text.Whitespace
+
+'-- Enter the circuit board into the table.' Comment.Single
+'\n'          Text.Whitespace
+
+'var'         Keyword.Declaration
+' '           Text.Whitespace
+'row'         Name
+':'           Punctuation
+' '           Text.Whitespace
+'integer'     Keyword.Type
+'\n'          Text.Whitespace
+
+'row'         Name
+' '           Text.Whitespace
+':='          Operator
+' '           Text.Whitespace
+'Ci'          Name
+'rcuitBoards' Name
+'.'           Punctuation
+'getColumnYDim' Name
+'('           Punctuation
+'1'           Literal.Number.Integer
+')'           Punctuation
+' '           Text.Whitespace
+'+'           Operator
+' '           Text.Whitespace
+'1'           Literal.Number.Integer
+'\n'          Text.Whitespace
+
+'Ci'          Name
+'rcuitBoards' Name
+'['           Punctuation
+'"circuitBoard"' Literal.String
+','           Punctuation
+' '           Text.Whitespace
+'row'         Name
+']'           Punctuation
+' '           Text.Whitespace
+':='          Operator
+' '           Text.Whitespace
+'@'           Name.Builtin.Pseudo
+'\n'          Text.Whitespace
+
+'Ci'          Name
+'rcuitBoards' Name
+'['           Punctuation
+'"location"'  Literal.String
+','           Punctuation
+' '           Text.Whitespace
+'row'         Name
+']'           Punctuation
+' '           Text.Whitespace
+':='          Operator
+' '           Text.Whitespace
+'?'           Name.Builtin.Pseudo
+'\n'          Text.Whitespace
+
+'Ci'          Name
+'rcuitBoards' Name
+'['           Punctuation
+'"entered"'   Literal.String
+','           Punctuation
+' '           Text.Whitespace
+'row'         Name
+']'           Punctuation
+' '           Text.Whitespace
+':='          Operator
+' '           Text.Whitespace
+'Ev'          Name
+'entController' Name
+'.'           Punctuation
+'Si'          Name
+'mTime'       Name
+'\n'          Text.Whitespace
+
+'@'           Name.Builtin.Pseudo
+'.'           Punctuation
+'move'        Name
+' '           Text.Whitespace
+'-- Move the board onto successor.' Comment.Single
+'\n'          Text.Whitespace
